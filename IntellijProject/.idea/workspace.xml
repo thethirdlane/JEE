@@ -8,8 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcfeb07f-88c1-401b-aa19-28a9f8ac2b31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/populateDB.sql" afterPath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/populateDB.sql" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -105,8 +103,8 @@
       <file leaf-file-name="populateDB.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/populateDB.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -761,7 +759,7 @@
       <workItem from="1528593644624" duration="236000" />
       <workItem from="1528593983315" duration="1343000" />
       <workItem from="1528596706078" duration="555000" />
-      <workItem from="1528597750866" duration="1090000" />
+      <workItem from="1528597750866" duration="1173000" />
     </task>
     <task id="LOCAL-00001" summary="Initial load">
       <created>1528577391649</created>
@@ -777,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528577912551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial load">
+      <created>1528598867951</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528598867951</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177397000" />
+    <option name="totallyTimeSpent" value="177480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="22" width="1429" height="1002" extended-state="0" />
@@ -1342,8 +1347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/populateDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
