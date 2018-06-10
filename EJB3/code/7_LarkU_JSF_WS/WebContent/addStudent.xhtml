@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="title">LarkU</ui:define>
+		<ui:define name="body">
+			<h2>Add a Student</h2>
+
+			<f:view id="addStudentView">
+				<h:form id="addStudentForm">
+					<table>
+						<tr>
+							<td><h:outputLabel value="Name" /></td>
+							<td><h:inputText id="name" value="#{student.name}" /></td>
+						</tr>
+						<tr>
+							<td><h:outputLabel value="Status" /></td>
+							<td><h:selectOneMenu id="status" value="#{student.status}">
+									<f:selectItems value="#{larkUController.statusList}" />
+								</h:selectOneMenu></td>
+
+						</tr>
+						<tr>
+							<td><h:commandButton id="addStudentButton"
+									value="Add Student" action="#{larkUController.addStudent}" /></td>
+							<td><h:commandButton id="cancel"
+												 value="Cancel" action="index.xhtml"/></td>
+						</tr>
+					</table>
+				</h:form>
+
+				<br />
+			</f:view>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>

@@ -1,0 +1,147 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+	<title>Add Bulk Students</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<link rel="stylesheet" type="text/css" href="css/larkU.css" />
+	<link rel="stylesheet" type="text/css" href="css/schoolStyles.css" />
+	<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+
+	<script>
+		var RegExes = {
+			"name" : "^[A-Z].*",
+			"phoneNumber" : "^[0-9]{3}[\\s\\-][0-9]{3}[\\s\\-][0-9]{4}$"
+		};
+
+		var validate = function(elem) {
+			var name = elem["name"];
+			var re = RegExes[name];
+
+			var value = checkElem(elem, re);
+		}
+
+		var doAdd = function(event) {
+			event = event ? event : window.event;
+			//console.log(event.clientX);
+			var allGood = true;
+			var name, status, phoneNumber;
+			//Validation REs
+			var nameRe = "^[A-Z].*";
+			var phoneRe = "^[0-9]{3}[\\s\\-][0-9]{3}[\\s\\-][0-9]{4}$";
+
+			var name = checkElem($('#nameInput'), nameRe);
+			var phoneNumber = checkElem($('#phoneNumberInput'), phoneRe);
+			var status = $('#statusInput').val();
+
+			if (!name || !status || !phoneNumber) {
+				allGood = false;
+			}
+
+			if (allGood) {
+				//Set up the JSON object to send in the request
+				var student = {
+					"name" : name,
+					"status" : status,
+					"phoneNumber" : phoneNumber,
+				}
+
+				$.ajax({
+					//url : "http://localhost:8080/Solutions/jaxrs/jpa/addStudent",
+					url : "http://localhost:8080/7_LarkU_JSF_WS/restreg/student",
+					type : "post",
+					dataType : "json",
+					data : student,
+					data : JSON.stringify(student),
+					contentType : "application/json",
+					processData : false,
+					success : function(data) {
+						//console.log("data = " + data);
+						//data = data.resultObject;
+						//Add it to the list of students
+						var e = $('#studentList');
+						e.append($('<li>').append(data.name + " - " + data.status + " - " + data.phoneNumber));
+
+					},
+
+					error : function(jqXHR, textStatus, errorThrown) {
+						alert("textStatus is " + textStatus + ", error is " + errorThrown);
+					}
+				});
+			}
+
+		}
+
+		function checkElem(elem, validRe) {
+			var result = null;
+
+			if (!$(elem).val().match(validRe)) {
+				console.log("bad " + $(elem).attr("name"));
+				$(elem).addClass("error");
+			} else {
+				$(elem).removeClass("error");
+				result = $(elem).val();
+			}
+
+			return result;
+		}
+
+		$(document).ready(function() {
+			//Fetch the set of current students and populate the list
+			//var href = "http://localhost:8080/7_LarkU_JSF_WS/restreg/students";
+			var href = "restreg/students";
+			$.get(href, function(values) {
+				//var students = values;
+				var students = values.student;
+				//console.log("data = " + data);
+				var e = $('#studentList');
+				$.each(students, (function(index, data) {
+					e.append($('<li>').append(data.name + " - " + data.status + " - " + data.phoneNumber));
+				}))
+			}, "json").error(function(jqXHR, textStatus, errorThrown) {
+				alert("Error in Fetching Students: textStatus is " + textStatus + ", error is " + errorThrown);
+			});
+		});
+	</script>
+</h:head>
+<h:body>
+	<f:view>
+		<h2>Add a Student</h2>
+
+		<h:form id="addStudentForm">
+			<table>
+				<tr>
+					<td><h:outputLabel value="Name" /></td>
+					<td><h:inputText id="name" value="#{student.name}" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Status" /></td>
+					<td><h:selectOneMenu id="status" value="#{student.status}">
+							<f:selectItems value="#{larkUController.statusList}" />
+						</h:selectOneMenu></td>
+
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Phone Number" /></td>
+					<td><h:inputText id="phoneNumber"
+							value="#{student.phoneNumber}" /></td>
+				</tr>
+				<tr>
+					<td><h:commandButton id="addStudentButton" value="Add Student"
+							action="#{larkUController.addStudent}" /></td>
+				</tr>
+			</table>
+		</h:form>
+
+		<br />
+		<div id="listDiv">
+			<h2>List of Students Added</h2>
+			<ol id="studentList">
+			</ol>
+		</div>
+	</f:view>
+</h:body>
+</html>

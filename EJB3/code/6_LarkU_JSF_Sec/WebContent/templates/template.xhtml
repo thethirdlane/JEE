@@ -1,0 +1,21 @@
+<html id="indexhtml" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU<ui:insert name="title" /></title>
+	<link rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/larkU.css"
+		type="text/css" />
+</h:head>
+
+<h:body>
+	<f:view>
+		<ui:include src="/larkUHeader.xhtml" />
+		<ui:insert name="body" />
+	</f:view>
+</h:body>
+
+</html>
+

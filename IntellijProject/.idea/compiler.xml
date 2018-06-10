@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/src/main/java/ttl/larku/app/RegistrationAppDeltaS.java" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/2_LarkU_EJB/src/main/java/ttl/larku/app" includeSubdirectories="true" />
+      <file url="file://$PROJECT_DIR$/../EJB3/code/LarkU_Clients/bin/ttl/larku/ejb/client/AsyncClient.class" />
+      <file url="file://$PROJECT_DIR$/../EJB3/code/LarkU_Clients/bin/ttl/larku/ejb/client/ConcurrentAccessTest.class" />
+      <file url="file://$PROJECT_DIR$/../EJB3/code/LarkU_Clients/bin/ttl/larku/ejb/client/ConcurrentAccessTest$Worker.class" />
+      <file url="file://$PROJECT_DIR$/../EJB3/code/LarkU_Clients/bin/ttl/larku/ejb/client/CourseServiceClient.class" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/3_LarkU_EJB_EE/src/main/java/ttl/larku/app" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/3_LarkU_EJB_EE/src/test/java/ttl" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/4_LarkU_EJB_JMS/src/main/java/ttl/larku/app" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/4_LarkU_EJB_JMS/src/test" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/app" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/test" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/6_LarkU_EJB_Sec/src/test" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/6_LarkU_EJB_Sec/src/main/java/ttl/larku/app" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_EJB_WS/src/main/java/ttl/larku/app" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_EJB_WS/src/test" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/2_LarkU_EJB/src/test" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/src/test" includeSubdirectories="true" />
+    </excludeFromCompile>
+  </component>
+</project>

@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="title">LarkU</ui:define>
+		<ui:define name="body">
+
+			<h2>Register a Student for a Scheduled Class</h2>
+
+			<f:view id="registerStudentView" >
+			<f:metadata>
+				<f:viewAction action="#{larkUController.setupRegistration}" />
+			</f:metadata>
+				<h:form id="registerStudentForm">
+					<table border="1">
+						<tr>
+							<td><h:messages style="color:darkred" id="error_message" />
+							</td>
+						</tr>
+						<tr>
+							<td>Student</td>
+							<td><h:selectOneMenu id="student" value="#{student.id}">
+									<f:selectItems value="#{studentList.list}" var="st"
+										itemLabel="#{st.name}" itemValue="#{st.id}" />
+								</h:selectOneMenu></td>
+						</tr>
+						<tr>
+							<td>Course</td>
+							<td><h:selectOneMenu id="scheduledClass"
+									value="#{scheduledClass.id}">
+									<f:selectItems value="#{classList.list}" var="sc"
+										itemLabel="#{sc.course.code} - #{sc.startDate} - #{sc.endDate}"
+										itemValue="#{sc.id}" />
+								</h:selectOneMenu></td>
+						</tr>
+						<tr>
+							<td><h:commandButton id="registerStudent"
+									value="Register Student"
+									action="#{larkUController.registerStudent}" /></td>
+						</tr>
+					</table>
+				</h:form>
+
+				<br />
+				<h:link outcome="index.xhtml">Home</h:link>
+			</f:view>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>

@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+
+	<h2>Register a Student for a Scheduled Class</h2>
+
+	<f:view id="registerStudentView">
+		<h:form id="registerStudentForm">
+			<table border="1">
+				<tr>
+					<td>Student</td>
+					<td><h:selectOneMenu id="student"
+							value="#{student.id}">
+							    <f:selectItems value="#{larkUController.allStudents}" 
+							    	var="st" itemLabel="#{st.name}" itemValue="#{st.id}" />
+						</h:selectOneMenu></td>
+				</tr>
+				<tr>
+					<td>Course</td>
+					<td><h:selectOneMenu id="scheduledClass"
+							value="#{scheduledClass.id}">
+							    <f:selectItems value="#{larkUController.allClasses}" 
+							    	var="sc" itemLabel="#{sc.course.code} - #{sc.startDate} - #{sc.endDate}" 
+							    						itemValue="#{sc.id}" />
+						</h:selectOneMenu></td>
+				</tr>
+				<tr>
+					<td><h:commandButton id="registerStudent" value="Register Student"
+							action="#{larkUController.registerStudent}" /></td>
+				</tr>
+			</table>
+		</h:form>
+
+		<br />
+		<h:link
+			outcome="index.xhtml">Home</h:link>
+	</f:view>
+
+</h:body>
+
+</html>

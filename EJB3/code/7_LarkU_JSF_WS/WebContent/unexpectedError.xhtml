@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="title">LarkU</ui:define>
+		<ui:define name="body">
+
+				<h2>Whoops! The following bad and Unexpected Thing happend</h2>
+				<h2>${ExceptionMessage}</h2>
+
+
+				<br />
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>

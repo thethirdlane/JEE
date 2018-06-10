@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="4_LarkU_EAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="4_LarkU_EJB_JMS.jar" deploy-path="/" handle="module:/resource/4_LarkU_EJB_JMS/4_LarkU_EJB_JMS">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="4_LarkU_JSF_JMS.war" deploy-path="/" handle="module:/resource/4_LarkU_JSF_JMS/4_LarkU_JSF_JMS">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

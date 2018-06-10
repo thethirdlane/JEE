@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:body>
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="body">
+
+			<div>
+				<f:view id="indexView">
+					<table>
+						<tr>
+							<td><h:link outcome="getStudents.xhtml">Get
+						all students</h:link></td>
+						</tr>
+						<tr>
+							<td><h:form id="getStudentIdForm">
+									<h:inputText id="id" value="#{student.id}" />
+									<h:commandButton action="${larkUController.getStudent}"
+										value="Get Student With Id" />
+								</h:form></td>
+						</tr>
+						<tr>
+							<td><h:link outcome="addStudent.xhtml">Add a student</h:link></td>
+						</tr>
+						<tr>
+							<td><h:form id="deleteStudentIdForm">
+									<h:inputText id="id" value="#{student.id}" />
+									<h:commandButton action="${larkUController.deleteStudent}"
+										value="Delete Student With Id" />
+								</h:form></td>
+						</tr>
+						<tr>
+							<td><h:link outcome="getCourses.xhtml">Get all Courses</h:link></td>
+						</tr>
+						<tr>
+							<td><h:form id="getCourseIdForm">
+									<h:inputText id="id" value="#{course.id}" />
+									<h:commandButton action="${larkUController.getCourse}"
+										value="Get Course With Id" />
+								</h:form></td>
+						</tr>
+						<tr>
+							<td><h:link outcome="addCourse.xhtml">Add
+						a Course</h:link></td>
+						</tr>
+
+						<tr>
+							<td><h:link outcome="addClass.xhtml">Schedule
+						a Class</h:link></td>
+						</tr>
+
+						<tr>
+							<td><h:link outcome="getClasses.xhtml">Get
+						All Classes</h:link></td>
+						</tr>
+
+						<tr>
+							<td><h:link outcome="registerStudent.xhtml">Register
+						A Student for a Class</h:link></td>
+						</tr>
+
+						<tr>
+							<td><br />
+							<h:form id="logoutForm">
+									<h:commandButton action="${larkUController.logout}"
+										value="Logout" />
+								</h:form></td>
+						</tr>
+					</table>
+				</f:view>
+			</div>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

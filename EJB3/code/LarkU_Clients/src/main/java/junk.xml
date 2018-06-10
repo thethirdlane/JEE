@@ -1,0 +1,86 @@
+
+POST /RegistrationWSFacadeImplService/RegistrationWSFacadeImpl HTTP/1.1
+Accept: text/xml, multipart/related
+Content-Type: text/xml; charset=utf-8
+SOAPAction:
+"http://impl.ws.service.larku.ttl/RegistrationWSFacadeImpl/getAllStudentsRequest"
+User-Agent: Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000)
+JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown
+Host: 127.0.0.1:8888
+Connection: keep-alive
+Content-Length: 199
+
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getAllStudents xmlns:ns2="http://impl.ws.service.larku.ttl/" />
+	</S:Body>
+</S:Envelope>
+
+
+HTTP/1.1 200 OK
+server: grizzly/1.9.50
+Content-Type: text/xml;charset=utf-8
+Transfer-Encoding: chunked
+Date: Thu, 28 Aug 2014 19:27:48 GMT
+
+6e
+<?xml version='1.0' encoding='UTF-8'?>
+   <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+      <S:Body>
+3a3
+
+         <ns2:getAllStudentsResponse xmlns:ns2="http://impl.ws.service.larku.ttl/">
+            <return>
+               <id>1</id>
+               <name>Ana</name>
+               <phoneNumber>222 333 4444</phoneNumber>
+               <status>FULL_TIME</status>
+               <classes/>
+            </return>
+            <return>
+               <id>2</id>
+               <name>Madhu</name>
+               <phoneNumber>222 123 5748</phoneNumber>
+               <status>PART_TIME</status>
+               <classes/>
+            </return>
+            <return>
+               <id>3</id>
+               <name>Roberta</name>
+               <phoneNumber>222 333 5555</phoneNumber>
+               <status>HIBERNATING</status>
+               <classes/>
+            </return>
+            <return>
+               <id>4</id>
+               <name>Manoj</name>
+               <phoneNumber>123 456 5748</phoneNumber>
+               <status>FULL_TIME</status>
+               <classes/>
+            </return>
+            <return>
+               <id>17</id>
+               <name>Unknown</name>
+               <status>FULL_TIME</status>
+               <classes/>
+            </return>
+            <return>
+               <id>18</id>
+               <name>Mike</name>
+               <phoneNumber>282 828 8828</phoneNumber>
+               <status>FULL_TIME</status>
+               <classes/>
+            </return>
+            <return>
+               <id>19</id>
+               <name>Alan</name>
+               <phoneNumber>383 838 8383</phoneNumber>
+               <status>FULL_TIME</status>
+               <classes/>
+            </return>
+         </ns2:getAllStudentsResponse>
+      </S:Body>
+   </S:Envelope>
+0
+

@@ -1,0 +1,62 @@
+<html id="indexhtml" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU<ui:insert name="title" /></title>
+	<link rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/larkU.css"
+		type="text/css" />
+</h:head>
+
+<h:body>
+	<f:view id="indexView">
+		<table>
+			<tr>
+				<td><h:link outcome="getStudents.xhtml">Get
+						all students</h:link></td>
+			</tr>
+			<tr>
+				<td><h:form id="getStudentIdForm">
+						<h:inputText id="id" value="#{student.id}" />
+						<h:commandButton action="${larkUController.getStudent}"
+							value="Get Student With Id" />
+					</h:form></td>
+			</tr>
+			<tr>
+				<td><h:link outcome="addStudent.xhtml">Add a student</h:link></td>
+			</tr>
+			<tr>
+				<td><h:link outcome="getCourses.xhtml">Get all Courses</h:link></td>
+			</tr>
+			<tr>
+				<td><h:form id="getCourseIdForm">
+						<h:inputText id="id" value="#{course.id}" />
+						<h:commandButton action="${larkUController.getCourse}"
+							value="Get Course With Id" />
+					</h:form></td>
+			</tr>
+			<tr>
+				<td><h:link outcome="addCourse.xhtml">Add
+						a Course</h:link></td>
+			</tr>
+
+			<tr>
+				<td><h:link outcome="addClass.xhtml">Schedule
+						a Class</h:link></td>
+			</tr>
+
+			<tr>
+				<td><h:link outcome="getClasses.xhtml">Get
+						All Classes</h:link></td>
+			</tr>
+
+			<tr>
+				<td><h:link outcome="registerStudent.xhtml">Register
+						A Student for a Class</h:link></td>
+			</tr>
+		</table>
+	</f:view>
+</h:body>
+</html>

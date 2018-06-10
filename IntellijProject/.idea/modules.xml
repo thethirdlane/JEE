@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/0_LarkU.iml" filepath="$PROJECT_DIR$/../EJB3/code/0_LarkU/0_LarkU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/1_LarkU_JSF/1_LarkU_JSF.iml" filepath="$PROJECT_DIR$/../EJB3/code/1_LarkU_JSF/1_LarkU_JSF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/2_LarkU_EJB/2_LarkU_EJB.iml" filepath="$PROJECT_DIR$/../EJB3/code/2_LarkU_EJB/2_LarkU_EJB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_LarkU_EE/3_LarkU_EE.iml" filepath="$PROJECT_DIR$/3_LarkU_EE/3_LarkU_EE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/3_LarkU_EJB_EE/3_LarkU_EJB_EE.iml" filepath="$PROJECT_DIR$/../EJB3/code/3_LarkU_EJB_EE/3_LarkU_EJB_EE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/3_LarkU_JSF_EE/3_LarkU_JSF_EE.iml" filepath="$PROJECT_DIR$/../EJB3/code/3_LarkU_JSF_EE/3_LarkU_JSF_EE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/4_LarkU_EE/4_LarkU_EAR.iml" filepath="$PROJECT_DIR$/../EJB3/code/4_LarkU_EE/4_LarkU_EAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/4_LarkU_EJB_JMS/4_LarkU_EJB_JMS.iml" filepath="$PROJECT_DIR$/../EJB3/code/4_LarkU_EJB_JMS/4_LarkU_EJB_JMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/4_LarkU_JSF_JMS/4_LarkU_JSF_JMS.iml" filepath="$PROJECT_DIR$/../EJB3/code/4_LarkU_JSF_JMS/4_LarkU_JSF_JMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EE/5_LarkU_EAR.iml" filepath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EE/5_LarkU_EAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/5_LarkU_EJB_JPA.iml" filepath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/5_LarkU_EJB_JPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_JSF_JPA/5_LarkU_JSF_JPA.iml" filepath="$PROJECT_DIR$/../EJB3/code/5_LarkU_JSF_JPA/5_LarkU_JSF_JPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/6_LarkU_EAR/6_LarkU_EAR.iml" filepath="$PROJECT_DIR$/../EJB3/code/6_LarkU_EAR/6_LarkU_EAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/6_LarkU_EJB_Sec/6_LarkU_EJB_Sec.iml" filepath="$PROJECT_DIR$/../EJB3/code/6_LarkU_EJB_Sec/6_LarkU_EJB_Sec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/6_LarkU_JSF_Sec/6_LarkU_JSF_Sec.iml" filepath="$PROJECT_DIR$/../EJB3/code/6_LarkU_JSF_Sec/6_LarkU_JSF_Sec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_EAR/7_LarkU_EAR.iml" filepath="$PROJECT_DIR$/../EJB3/code/7_LarkU_EAR/7_LarkU_EAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_EJB_WS/7_LarkU_EJB_WS.iml" filepath="$PROJECT_DIR$/../EJB3/code/7_LarkU_EJB_WS/7_LarkU_EJB_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/7_LarkU_JSF_WS.iml" filepath="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/7_LarkU_JSF_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/JSF_FUNDAS.iml" filepath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/JSF_FUNDAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EJB3/code/StandAloneJMS/StandAloneJMS.iml" filepath="$PROJECT_DIR$/../EJB3/code/StandAloneJMS/StandAloneJMS.iml" />
+    </modules>
+  </component>
+</project>

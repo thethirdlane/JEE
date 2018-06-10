@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
+             version="6">
+
+    <module id="__LarkU_EJB_Sec-EJB">
+        <ejb>6.jar</ejb>
+    </module>
+    <module id="__LarkU_JSF_Sec-Web">
+        <web>
+            <web-uri>6.war</web-uri>
+            <context-root>6_LarkU_JSF</context-root>
+        </web>
+    </module>
+</application>

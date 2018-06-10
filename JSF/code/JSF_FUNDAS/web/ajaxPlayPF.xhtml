@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>JSF Ajax Explorer</title>
+    <link rel="stylesheet" href="css/larkU.css" type="text/css"/>
+</h:head>
+
+<h:body>
+
+    <h2>JSF Ajax Explorer</h2>
+
+    <f:view>
+        <h:messages/>
+
+        <p:ajax listener="#{ajaxPlayBean.calculate}" process="form" update="form">
+            <h:form id="form">
+                <p:panelGrid columns="2">
+                    <h:outputText value="x"/>
+                    <h:inputText id="x" value="#{ajaxPlayBean.x}">
+                    </h:inputText>
+
+                    <h:outputText value="y"/>
+                    <h:inputText id="y" value="#{ajaxPlayBean.y}"/>
+
+                    <h:outputText value="z"/>
+                    <h:inputText id="z" value="#{ajaxPlayBean.z}"/>
+
+                    <h:outputText value="sum"/>
+                    <h:inputText id="sum" value="#{ajaxPlayBean.sum}"/>
+
+                    <p:commandButton
+                            id="calculate"
+                            value="Calculate">
+                        <!--
+                            <f:ajax listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form" />
+                         -->
+                    </p:commandButton>
+                </p:panelGrid>
+            </h:form>
+        </p:ajax>
+    </f:view>
+
+</h:body>
+
+</html>
+

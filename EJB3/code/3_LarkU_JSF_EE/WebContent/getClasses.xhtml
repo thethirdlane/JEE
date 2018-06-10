@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="title">LarkU</ui:define>
+		<ui:define name="body">
+			<h2>All Scheduled Classes</h2>
+
+			<f:view id="allClassView">
+				<h:dataTable binding="#{dth.table}" id="allClassesTable" var="sc"
+					value="#{larkUController.allClasses}" varStatus="status" border="1"
+					cellpadding="5" cellspacing="2">
+					<h:column>
+						<f:facet name="header">#</f:facet>
+						<h:outputText id="index" value="#{dth.table.rowIndex + 1}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">Id</f:facet>
+						<h:outputText id="id" value="#{sc.id}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">Course Code</f:facet>
+						<h:outputText id="code" value="#{sc.course.code}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">Title</f:facet>
+						<h:outputText id="title" value="#{sc.course.title}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">Credits</f:facet>
+						<h:outputText id="credits" value="#{sc.course.credits}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">Start Date</f:facet>
+						<h:outputText id="startDate" value="#{sc.startDate}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">End Date</f:facet>
+						<h:outputText id="endDate" value="#{sc.endDate}" />
+					</h:column>
+				</h:dataTable>
+
+				<br />
+				<h:link outcome="index.xhtml">Home</h:link>
+			</f:view>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>
+

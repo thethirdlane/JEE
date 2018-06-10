@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="3.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd">
+  <display-name>4_LarkU_EJB_JMS</display-name> 
+<!--  
+  <interceptors>
+  	<interceptor>
+  		<interceptor-class>ttl.larku.service.ejb.interceptor.PerformanceInterceptor</interceptor-class>
+  	</interceptor>
+  	<interceptor>
+  		<interceptor-class>ttl.larku.service.ejb.interceptor.LoggingInterceptor</interceptor-class>
+  	</interceptor>
+  </interceptors>
+  <assembly-descriptor>
+  	<interceptor-binding>
+  		<ejb-name>RegistrationFacadeImpl</ejb-name>
+  		<interceptor-class>ttl.larku.service.ejb.interceptor.PerformanceInterceptor</interceptor-class>
+  		<method>
+  			<method-name>getAllStudents</method-name>
+  		</method>
+  	</interceptor-binding>
+  	<interceptor-binding>
+  		<ejb-name>LocalStudentServiceImpl</ejb-name>
+  		<interceptor-class>ttl.larku.service.ejb.interceptor.LoggingInterceptor</interceptor-class>
+  		<method>
+  			<method-name>createStudent</method-name>
+  			<method-params>
+  				<method-param>java.lang.String</method-param>
+  			</method-params>
+  		</method>
+  	</interceptor-binding>
+  </assembly-descriptor>
+--> 
+</ejb-jar>

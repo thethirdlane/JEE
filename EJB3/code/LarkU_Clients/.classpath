@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="ttl/larku/ejb/client/AccessTimeOut.java|ttl/larku/ejb/client/AccessTwo.java|ttl/larku/ejb/client/SimpleClient.java" kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/generated"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jax-rs-client"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/5_LarkU_EJB_JPA"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/gf-client"/>
+	<classpathentry kind="lib" path="/home/c/weblogic/OracleHome/wlserver/server/lib/wlthint3client.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

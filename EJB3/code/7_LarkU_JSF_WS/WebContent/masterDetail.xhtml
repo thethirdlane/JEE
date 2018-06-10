@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>LarkU MasterDetail</title>
+    <link rel="stylesheet" href="css/larkU.css" type="text/css"/>
+</h:head>
+
+
+<h:body>
+    <ui:composition template="/templates/template.xhtml">
+        <ui:define name="title">LarkU</ui:define>
+        <ui:define name="subHeading">
+            <h2>Student Master/Detail</h2>
+        </ui:define>
+        <ui:define name="body">
+            <f:view id="mdview">
+                <f:metadata>
+                    <f:viewAction action="#{larkUController.getAllStudents}"/>
+                    <!--
+                <f:event type="preRenderView" listener="#{larkUController.getAllStudents}" />
+                -->
+                </f:metadata>
+                <h:messages/>
+                <h:form id="mdform">
+                    <h:dataTable id="mastertable" value="#{larkUController.studentList}" var="student"
+                                 border="1" cellpadding="5" cellspacing="2">
+                        <h:column>
+                            <f:facet name="header">
+                                Id
+                            </f:facet>
+                            <h:commandLink id="slink" value="#{student.id}">
+                                <f:ajax listener="#{larkUController.ajaxStudent(student.id)}"
+                                        render="mdform:detailgroup">
+                                </f:ajax>
+                            </h:commandLink>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                Name
+                            </f:facet>
+                            <h:outputText value="#{student.name}"/>
+                        </h:column>
+                    </h:dataTable>
+
+                    <br/>
+
+                    <h:panelGroup id="detailgroup">
+                        <h:panelGrid id="detailtable" columns="2"
+                                     border="1" title="Student Detail"
+                                     rendered="#{larkUController.detailStudent != null}">
+                            <f:facet name="header">
+                                Student Details
+                            </f:facet>
+
+                            <h:outputText value="Id"/>
+                            <h:outputText id="sid" value="#{larkUController.detailStudent.id}"/>
+
+                            <h:outputText value="Name"/>
+                            <h:outputText id="sname" value="#{larkUController.detailStudent.name}"/>
+
+                            <h:outputText value="Phone"/>
+                            <h:outputText id="sphone" value="#{larkUController.detailStudent.phoneNumber}"/>
+
+                            <h:outputText value="Status"/>
+                            <h:outputText id="sstatus" value="#{larkUController.detailStudent.status}"/>
+                        </h:panelGrid>
+                    </h:panelGroup>
+                </h:form>
+            </f:view>
+        </ui:define>
+
+    </ui:composition>
+</h:body>
+</html>

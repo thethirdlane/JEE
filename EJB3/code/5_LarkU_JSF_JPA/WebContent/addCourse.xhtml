@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="title">LarkU</ui:define>
+		<ui:define name="body">
+
+			<h2>Add a Course</h2>
+
+			<f:view id="addCourseView">
+				<h:form id="addCourseForm">
+					<table>
+						<tr>
+							<td><h:outputLabel value="Code" /></td>
+							<td><h:inputText id="code" value="#{course.code}" /></td>
+						</tr>
+						<tr>
+							<td><h:outputLabel value="Title" /></td>
+							<td><h:inputText id="title" value="#{course.title}" /></td>
+						</tr>
+						<tr>
+							<td><h:outputLabel value="Credits" /></td>
+							<td><h:selectOneMenu id="credits" value="#{course.credits}">
+									<f:selectItems value="#{course.creditList}" />
+								</h:selectOneMenu></td>
+
+						</tr>
+						<tr>
+							<td><h:commandButton id="addCourseButton" value="Add Course"
+									action="#{larkUController.addCourse}" /></td>
+						</tr>
+					</table>
+				</h:form>
+
+				<br />
+				<h:link outcome="index.xhtml">Home</h:link>
+			</f:view>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>

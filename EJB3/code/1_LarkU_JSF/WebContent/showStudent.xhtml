@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+
+	<h2>Student Details</h2>
+
+	<f:view id="showStudentView">
+		<table border="1">
+			<tr>
+				<td><h:outputLabel value="Name" /></td>
+				<td><h:outputText id="name" value="#{student.name}" /></td>
+			</tr>
+			<tr>
+				<td><h:outputLabel value="Id" /></td>
+				<td><h:outputText id="id" value="#{student.id}" /></td>
+			</tr>
+			<tr>
+				<td><h:outputLabel value="Status" /></td>
+				<td><h:outputText id="status" value="#{student.status}" /></td>
+
+			</tr>
+			<tr>
+				<td>Courses</td>
+				<td><ui:repeat value="#{student.classes}" var="cl">
+						<h:outputText value="#{cl.course.code}" />
+					</ui:repeat>
+				</td>
+			</tr>
+		</table>
+
+		<br />
+		<h:link outcome="index.xhtml">Home</h:link>
+	</f:view>
+
+</h:body>
+
+</html>

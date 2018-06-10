@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>LarkU MasterDetail</title>
+    <link rel="stylesheet" href="css/larkU.css" type="text/css"/>
+</h:head>
+
+
+<h:body>
+    <ui:composition template="/templates/template.xhtml">
+        <ui:define name="title">LarkU</ui:define>
+        <ui:define name="subHeading">
+            <h2>Student Statistics</h2>
+        </ui:define>
+        <ui:define name="body">
+            <f:view id="mdview">
+                <h:messages/>
+                <h:form id="mdform">
+                    <h:panelGrid id="mainPanel" columns="2" style="margin-bottom:10px" cellpadding="5">
+                        <p:outputLabel for="chartType" value="ChartType:" />
+                        <p:selectOneRadio id="chartType" value="#{studentStatsController.chartType}"  layout="grid" columns="3">
+                            <f:selectItem itemLabel="Status" itemValue="status"/>
+                            <f:selectItem itemLabel="First Letter" itemValue="letter"/>
+                            <f:selectItem itemLabel="First 2 Letters" itemValue="letter2"/>
+                            <p:ajax update="chart" listener="#{studentStatsController.chartTypeListener}"/>
+                        </p:selectOneRadio>
+
+                    </h:panelGrid>
+
+                    <p:chart id="chart" type="pie" model="#{studentStatsController.chartModel}" style="width:400px;height:300px" />
+
+                    <h:outputText value="#{studentStatsController.chartType}"/>
+                </h:form>
+            </f:view>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>

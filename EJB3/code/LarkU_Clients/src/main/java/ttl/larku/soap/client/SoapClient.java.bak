@@ -1,0 +1,29 @@
+package ttl.larku.soap.client;
+
+import generated.ttl.larku.soap.RegistrationWSFacadeImpl;
+import generated.ttl.larku.soap.RegistrationWSFacadeImplService;
+import generated.ttl.larku.soap.Student;
+
+import java.util.List;
+
+import javax.xml.ws.BindingProvider;
+
+public class SoapClient {
+
+	public static void main(String[] args) {
+		RegistrationWSFacadeImplService factory = new RegistrationWSFacadeImplService();
+		RegistrationWSFacadeImpl service = factory
+				.getRegistrationWSFacadeImplPort();
+
+		BindingProvider bp = (BindingProvider) service;
+		bp.getRequestContext()
+				.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY,
+						"http://notyetmint:8888/RegistrationWSFacadeImplService/RegistrationWSFacadeImpl");
+
+		List<Student> students = service.getAllStudents();
+
+		for (Student student : students) {
+			System.out.println(student.toString());
+		}
+	}
+}

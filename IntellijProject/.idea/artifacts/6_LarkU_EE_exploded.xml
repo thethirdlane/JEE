@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="6_LarkU_EE-exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/6_LarkU_EE_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="6_LarkU_EAR/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="derbyclient" />
+      </element>
+      <element id="directory" name="6.jar">
+        <element id="artifact" artifact-name="6_LarkU_EJB_Sec:ejb exploded" />
+      </element>
+      <element id="directory" name="6.war">
+        <element id="artifact" artifact-name="6_LarkU_JSF_Sec:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

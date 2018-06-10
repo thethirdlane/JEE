@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="3_LarkU_EJB">
+    <output-path>$PROJECT_DIR$/out/artifacts/3_LarkU_EJB</output-path>
+    <root id="archive" name="3_LarkU_EJB.war" />
+  </artifact>
+</component>

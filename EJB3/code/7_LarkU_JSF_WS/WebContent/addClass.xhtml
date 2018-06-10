@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>LarkU</title>
+	<link rel="stylesheet" href="css/larkU.css" type="text/css" />
+</h:head>
+
+<h:body>
+
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="title">LarkU</ui:define>
+		<ui:define name="body">
+			<h2>Scheduled a Class</h2>
+
+			<f:view id="addClassView">
+			<f:metadata>
+			<!--
+				<f:viewAction action="#{larkUController.getAllStudents}" onPostback="true" />
+			-->
+				<f:event type="preRenderView" listener="#{larkUController.getAllCourses}" />
+			</f:metadata>
+				<h:form id="addClassForm">
+					<table border="1">
+						<tr>
+							<td>Course Code</td>
+							<td><h:selectOneMenu id="courseCode"
+									value="#{classDataHolder.courseCode}">
+									<f:selectItems value="#{courseList.list}" var="co"
+										itemLabel="#{co.code}" itemValue="#{co.code}" />
+								</h:selectOneMenu></td>
+						</tr>
+						<tr>
+							<td>Start Date</td>
+							<td><h:inputText id="startDate"
+									value="#{classDataHolder.startDate}" /></td>
+						</tr>
+						<tr>
+							<td>End Date</td>
+							<td><h:inputText id="endDate"
+									value="#{classDataHolder.endDate}" /></td>
+						</tr>
+						<tr>
+							<td><h:commandButton id="addClassButton" value="Add Class"
+									action="#{larkUController.addClass}" /></td>
+						</tr>
+					</table>
+				</h:form>
+
+				<br />
+			</f:view>
+		</ui:define>
+	</ui:composition>
+</h:body>
+
+</html>

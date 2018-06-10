@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>LarkU MasterDetail</title>
+    <link rel="stylesheet" href="css/larkU.css" type="text/css"/>
+</h:head>
+
+
+<h:body>
+    <ui:composition template="/templates/template.xhtml">
+        <ui:define name="title">LarkU</ui:define>
+        <ui:define name="body">
+            <f:view id="mdview">
+                <f:metadata>
+                    <f:viewParam name="id" value="#{viewDemoBean.sid}">
+                            <f:validateLongRange minimum="4" maximum="5000" />
+                    </f:viewParam>
+                    <f:viewAction action="#{viewDemoBean.retrieveStudent()}"/>
+                    <!--
+                <f:event type="preRenderView" listener="#{larkUController.getAllStudents}" />
+                -->
+                </f:metadata>
+                <h:messages/>
+
+                <h:panelGrid id="detailtable" columns="2"
+                             border="1" title="Student Detail">
+                    <f:facet name="header">
+                        Student Details
+                    </f:facet>
+
+                    <h:outputText value="Id"/>
+                    <h:outputText id="sid" value="#{viewDemoBean.student.id}"/>
+
+                    <h:outputText value="Name"/>
+                    <h:outputText id="sname" value="#{viewDemoBean.student.name}"/>
+
+                    <h:outputText value="Phone"/>
+                    <h:outputText id="sphone" value="#{viewDemoBean.student.phoneNumber}"/>
+
+                    <h:outputText value="Status"/>
+                    <h:outputText id="sstatus" value="#{viewDemoBean.student.status}"/>
+                </h:panelGrid>
+
+        </f:view>
+    </ui:define>
+</ui:composition>
+</h:body>
+        </html>
