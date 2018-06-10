@@ -1,5 +1,6 @@
 package ttl.jsf.lifecycle;
 
+import javax.enterprise.context.RequestScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.event.ValueChangeEvent;
@@ -8,7 +9,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Requires TreeViewListener to be wired in
+ */
 @Named
+@RequestScoped
 public class ViewTheTree {
 
     private String name;

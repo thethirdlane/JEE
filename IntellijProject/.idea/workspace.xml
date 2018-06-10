@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="7_LarkU_EAR" />
-      <artifact name="JSF_FUNDAS:war exploded" />
+      <artifact name="JSF_FUNDAS" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcfeb07f-88c1-401b-aa19-28a9f8ac2b31" name="Default" comment="">
+    <list default="true" id="fcfeb07f-88c1-401b-aa19-28a9f8ac2b31" name="Default" comment="Initial load">
+      <change beforePath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/5_LarkU_EJB_JPA.iml" afterPath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/5_LarkU_EJB_JPA.iml" />
+      <change beforePath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/DBOperations.java" afterPath="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/DBOperations.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSF_FUNDAS_war_exploded.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/derbyclient.xml" afterPath="$PROJECT_DIR$/.idea/libraries/derbyclient.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/Tracer.java" afterPath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/Tracer.java" />
+      <change beforePath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java" afterPath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java" />
+      <change beforePath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java" afterPath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java" />
+      <change beforePath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/faces-config.xml" />
+      <change beforePath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlay.xhtml" afterPath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlay.xhtml" />
+      <change beforePath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav/fromNavigator.xhtml" afterPath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav/fromNavigator.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,18 +43,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StandAloneJMSSender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/StandAloneJMS/src/ttl/jms/StandAloneJMSSender.java">
+      <file leaf-file-name="ajaxPlay.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlay.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3042">
-              <caret line="178" column="8" lean-forward="false" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="8" />
+            <state relative-caret-position="450">
+              <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/.gitignore">
+      <file leaf-file-name="ajaxPlayPF.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlayPF.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-432">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxWtf.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxWtf.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-118">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewTheTree.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/viewTheTree.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -54,90 +83,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/src/main/java/ttl/larku/app/RegistrationApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeldUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/src/main/java/ttl/larku/app/WeldUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateCourseApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file:///tmp/JEE/EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/UpdateCourseApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1528595465611" expanded="true" signature="2639:2659" ph="select * fro... Course" />
-                <marker date="1528595465611" expanded="true" signature="2892:2931" ph="select * fro... Course" />
-                <marker date="1528595465611" expanded="true" signature="3165:3214" ph="select count... course" />
-                <marker date="1528595465611" expanded="true" signature="3348:3393" ph="select * fro... Course" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/createDB.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-916">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="populateDB.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/populateDB.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instructor.java" pinned="false" current-in-tab="false">
-        <entry file="file:///tmp/JEE/EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/Instructor.java">
+      <file leaf-file-name="ViewTheTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayWithJPA.java" pinned="false" current-in-tab="false">
-        <entry file="file:///tmp/JEE/EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/PlayWithJPA.java">
+      <file leaf-file-name="faces-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/faces-config.xml">
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-314">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="298">
+              <caret line="36" column="81" lean-forward="false" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StandAloneJMSReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../EJB3/code/StandAloneJMS/src/ttl/jms/StandAloneJMSReceiver.java">
+      <file leaf-file-name="fromNavigator.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav/fromNavigator.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JDBCDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/JDBCDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1528599400199" expanded="true" signature="649:670" ph="Select * fro... Student" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBOperations.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/DBOperations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+              <folding>
+                <marker date="1528602274643" expanded="true" signature="3059:3093" ph="delete from ScheduledClass_Student... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -175,16 +183,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/ajaxPlayPF.xhtml" />
-        <option value="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/viewParamDemo.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/lifecycle.xhtml" />
         <option value="$PROJECT_DIR$/../EJB3/code/5_LarkU_JSF_JPA/WebContent/registerStudent.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/viewTheTree.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/events.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxWtf.xhtml" />
-        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlay.xhtml" />
-        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/fromNavigator.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/wierdResult.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/normalResult.xhtml" />
@@ -193,11 +197,8 @@
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/components.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/componentsPF.xhtml" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/comps/Comper.java" />
-        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/Tracer.java" />
-        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/listeners/GlobalListener.java" />
         <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/listeners/TreeViewListener.java" />
-        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java" />
         <option value="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/controllers/ViewDemoBean.java" />
         <option value="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/util/AjaxPlayBean.java" />
         <option value="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/service/rest/RestRegBootStrap.java" />
@@ -226,6 +227,13 @@
         <option value="$PROJECT_DIR$/../EJB3/code/StandAloneJMS/src/ttl/jms/StandAloneJMSReceiver.java" />
         <option value="$PROJECT_DIR$/../EJB3/code/StandAloneJMS/src/ttl/jms/StandAloneJMSSender.java" />
         <option value="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/populateDB.sql" />
+        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/Tracer.java" />
+        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java" />
+        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlay.xhtml" />
+        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java" />
+        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/faces-config.xml" />
+        <option value="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav/fromNavigator.xhtml" />
+        <option value="$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/DBOperations.java" />
       </list>
     </option>
   </component>
@@ -248,7 +256,9 @@
     <option name="width" value="1429" />
     <option name="height" value="1002" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -264,9 +274,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,6 +307,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_LarkU_EJB_JPA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ttl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -318,6 +335,21 @@
               <item name="ttl" type="462c0819:PsiDirectoryNode" />
               <item name="larku" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="7_LarkU_JSF_WS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="7_LarkU_JSF_WS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="7_LarkU_JSF_WS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
@@ -348,31 +380,67 @@
               <item name="jsf" type="462c0819:PsiDirectoryNode" />
               <item name="lifecycle" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSF_FUNDAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jsf" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSF_FUNDAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jsf" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSF_FUNDAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jsf" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="AjaxPlayBean" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSF_FUNDAS" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSF_FUNDAS" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="nav" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntellijProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSF_FUNDAS" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../weblogic/OracleHome/wlserver/modules/org.apache.openjpa.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="/c/java/course/developintelligence/2014/swisslog/develop/SwissLogJavaMigration/IntellijProject/lib/eclipselink2.7/org.glassfish.javax.json_1.0.4.v201311181159.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20088889" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Remote)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../EJB3/code/0_LarkU" />
-      <recent name="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/WEB-INF" />
-      <recent name="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web" />
-      <recent name="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ttl.jsf.comps" />
@@ -380,8 +448,12 @@
       <recent name="ttl.jsf.lifecycle" />
       <recent name="ttl.jsf.util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/../EJB3/code/0_LarkU" />
+      <recent name="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/WEB-INF" />
+      <recent name="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web" />
+      <recent name="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -396,13 +468,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="WebLogic Server.WebLogic 12.2.1.3.0">
+  <component name="RunManager" selected="Application.DBOperations">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="DBOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ttl.larku.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ttl.larku.db.DBOperations" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="5_LarkU_EJB_JPA" />
+      <envs />
+    </configuration>
+    <configuration name="JDBCDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ttl.larku.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ttl.larku.db.JDBCDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="5_LarkU_EJB_JPA" />
+      <envs />
     </configuration>
     <configuration name="JMSGooey" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -421,25 +531,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="StandAloneJMS" />
-      <envs />
-    </configuration>
-    <configuration name="RegistrationApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ttl.larku.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ttl.larku.app.RegistrationApp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="0_LarkU" />
       <envs />
     </configuration>
     <configuration name="StandAloneJMSReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -479,29 +570,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="StandAloneJMS" />
       <envs />
-    </configuration>
-    <configuration name="StudentServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ttl.larku.ejb.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ttl.larku.ejb.client.StudentServiceClient" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LarkU_Clients" />
-      <envs />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="MakeNoErrorCheck" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -583,25 +651,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="WebLogic 12.2.1.3.0" type="WebLogic Instance" factoryName="Local" APPLICATION_SERVER_NAME="WebLogic 12.2.1.3.0" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Weblogic 12.2.1.3.0 local" type="WebLogic Instance" factoryName="Local" APPLICATION_SERVER_NAME="WebLogic 12.2.1.3.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="PORT" value="7001" />
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="JSF_FUNDAS:war exploded">
-          <settings DEPLOYMENT_METHOD="Weblogic.Deployer">
-            <option name="CHECK_EJB_CMP_DATASOURCES" value="true" />
-          </settings>
-        </artifact>
-        <artifact name="7_LarkU_EAR">
+        <artifact name="JSF_FUNDAS">
           <settings DEPLOYMENT_METHOD="Weblogic.Deployer">
             <option name="CHECK_EJB_CMP_DATASOURCES" value="true" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="DOMAIN_PATH" value="$PROJECT_DIR$/../../../../../../../../weblogic/OracleHome/user_projects/domains/base_domain" />
+        <option name="DOMAIN_PATH" value="/home/c/weblogic/OracleHome/user_projects/domains/base_domain" />
         <option name="SERVER_NAME" value="AdminServer" />
         <option name="DOMAIN_NAME" value="base_domain" />
         <option name="ADMIN_SERVER_HOST" value="localhost" />
@@ -616,7 +679,7 @@
       <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="35535" />
+        <option name="DEBUG_PORT" value="45399" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTIONS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -665,8 +728,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="JSF_FUNDAS:war exploded" />
-          <artifact name="7_LarkU_EAR" />
+          <artifact name="JSF_FUNDAS" />
         </option>
       </method>
     </configuration>
@@ -712,20 +774,20 @@
       <envs />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="WebLogic Server.WebLogic 12.2.1.3.0" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RegistrationApp" />
-      <item index="2" class="java.lang.String" itemvalue="Application.StudentServiceClient" />
-      <item index="3" class="java.lang.String" itemvalue="Application.JMSGooey" />
-      <item index="4" class="java.lang.String" itemvalue="Application.StandAloneJMSSender" />
-      <item index="5" class="java.lang.String" itemvalue="Application.StandAloneJMSReceiver" />
+      <item index="0" class="java.lang.String" itemvalue="WebLogic Server.Weblogic 12.2.1.3.0 local" />
+      <item index="1" class="java.lang.String" itemvalue="Application.JMSGooey" />
+      <item index="2" class="java.lang.String" itemvalue="Application.StandAloneJMSSender" />
+      <item index="3" class="java.lang.String" itemvalue="Application.StandAloneJMSReceiver" />
+      <item index="4" class="java.lang.String" itemvalue="Application.JDBCDemo" />
+      <item index="5" class="java.lang.String" itemvalue="Application.DBOperations" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.StandAloneJMSSender" />
-        <item index="1" class="java.lang.String" itemvalue="Application.StandAloneJMSReceiver" />
-        <item index="2" class="java.lang.String" itemvalue="Application.JMSGooey" />
-        <item index="3" class="java.lang.String" itemvalue="Application.StudentServiceClient" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RegistrationApp" />
+        <item index="0" class="java.lang.String" itemvalue="Application.DBOperations" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JDBCDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.StandAloneJMSSender" />
+        <item index="3" class="java.lang.String" itemvalue="Application.StandAloneJMSReceiver" />
+        <item index="4" class="java.lang.String" itemvalue="Application.JMSGooey" />
       </list>
     </recent_temporary>
   </component>
@@ -760,6 +822,7 @@
       <workItem from="1528593983315" duration="1343000" />
       <workItem from="1528596706078" duration="555000" />
       <workItem from="1528597750866" duration="1210000" />
+      <workItem from="1528599460682" duration="4378000" />
     </task>
     <task id="LOCAL-00001" summary="Initial load">
       <created>1528577391649</created>
@@ -793,11 +856,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177517000" />
+    <option name="totallyTimeSpent" value="181895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="22" width="1429" height="1002" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -813,16 +875,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39793578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44036698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44036698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3560551" sideWeight="0.53675216" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36113125" sideWeight="0.53675216" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498469" sideWeight="0.5040092" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25290877" sideWeight="0.46324787" order="6" side_tool="true" content_ui="tabs" />
@@ -972,147 +1034,33 @@
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="53" />
+      <option name="time" value="61" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/Tracer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/listeners/GlobalListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/listeners/TreeViewListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/data/ClassDataHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/exception/LarkUBaseEHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/exception/LarkUEHFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/service/rest/RestRegBootStrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/service/rest/RestRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/controllers/ViewDemoBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/util/AjaxPlayBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/util/ELResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../jsf/mojarra-2.2.14/mojarra/jsf-api/src/main/java/javax/faces/component/UIViewRoot.java" />
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/src/ttl/larku/jsf/controllers/LarkUController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/masterDetail.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/templates/template.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/WebContent/addClass.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -1241,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1276,7 +1221,7 @@
         <state relative-caret-position="3330">
           <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1306,7 +1251,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/src/main/java/ttl/larku/app/RegistrationAppDeltaS.java" />
-    <entry file="file:///tmp/JEE/JEE.iml" />
+    <entry file="file://$PROJECT_DIR$/../JEE.iml" />
     <entry file="file://$PROJECT_DIR$/../EJB3/code/0_LarkU/src/main/java/ttl/larku/app/WeldUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1315,7 +1260,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///tmp/JEE/EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/Instructor.java">
+    <entry file="file://$PROJECT_DIR$/../EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/Instructor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -1323,31 +1268,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///tmp/JEE/EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/PlayWithJPA.java">
+    <entry file="file://$PROJECT_DIR$/../EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/PlayWithJPA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
+        <state relative-caret-position="72">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///tmp/JEE/EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/UpdateCourseApplication.java">
+    <entry file="file://$PROJECT_DIR$/../EJB3/code/StandAloneJPA/src/com/developintelligence/tutorials/jpa/UpdateCourseApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="72">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1528595465611" expanded="true" signature="2639:2659" ph="select * fro... Course" />
-            <marker date="1528595465611" expanded="true" signature="2892:2931" ph="select * fro... Course" />
-            <marker date="1528595465611" expanded="true" signature="3165:3214" ph="select count... course" />
-            <marker date="1528595465611" expanded="true" signature="3348:3393" ph="select * fro... Course" />
+            <element signature="imports" expanded="false" />
+            <marker date="1528599400211" expanded="true" signature="2639:2659" ph="select * fro... Course" />
+            <marker date="1528599400211" expanded="true" signature="2892:2931" ph="select * fro... Course" />
+            <marker date="1528599400211" expanded="true" signature="3165:3214" ph="select count... course" />
+            <marker date="1528599400211" expanded="true" signature="3348:3393" ph="select * fro... Course" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/createDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-916">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1358,6 +1303,165 @@
         <state relative-caret-position="270">
           <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/components.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/comps/Comper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/events.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///home/jdks/current/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="171" lean-forward="false" selection-start-line="11" selection-start-column="171" selection-end-line="11" selection-end-column="171" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///home/jdks/current/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="171" lean-forward="false" selection-start-line="13" selection-start-column="171" selection-end-line="13" selection-end-column="171" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/Tracer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#452#453#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/util/AjaxPlayBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#742#743#0" expanded="false" />
+            <element signature="e#773#774#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlay.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxPlayPF.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/ajaxWtf.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/viewTheTree.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/src/ttl/jsf/lifecycle/ViewTheTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="36" column="81" lean-forward="false" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/web/nav/fromNavigator.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/JDBCDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <marker date="1528599400199" expanded="true" signature="649:670" ph="Select * fro... Student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EJB3/code/5_LarkU_EJB_JPA/src/main/java/ttl/larku/db/DBOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <marker date="1528602274643" expanded="true" signature="3059:3093" ph="delete from ScheduledClass_Student... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1380,7 +1484,7 @@
           <artifact-editor>
             <show-sorted>false</show-sorted>
           </artifact-editor>
-          <last-edited>JSF_FUNDAS:war exploded</last-edited>
+          <last-edited>1_LarkU_JSF:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1429,7 +1533,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>StandAloneJPA</last-edited>
+          <last-edited>5_LarkU_EJB_JPA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1453,7 +1557,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jstl</last-edited>
+          <last-edited>eclipselink2.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

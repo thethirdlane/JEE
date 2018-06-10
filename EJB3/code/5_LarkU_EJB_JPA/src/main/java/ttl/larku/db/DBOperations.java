@@ -19,9 +19,9 @@ public class DBOperations {
 	public static void main(String[] args) {
 		DBOperations dbOperations = new DBOperations();
 		
-		dbOperations.dropData();
+		//dbOperations.dropData();
 		
-		dbOperations.createData();
+		//dbOperations.createData();
 		
 		dbOperations.printStudents();
 		

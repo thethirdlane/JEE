@@ -33,7 +33,7 @@
     </navigation-rule>
 
     <lifecycle>
-        <!-- <phase-listener>ttl.jsf.listeners.TreeViewListener</phase-listener> -->
-        <phase-listener>ttl.jsf.listeners.GlobalListener</phase-listener>
+        <phase-listener>ttl.jsf.listeners.TreeViewListener</phase-listener>
+        <!-- <phase-listener>ttl.jsf.listeners.GlobalListener</phase-listener> -->
     </lifecycle>
 </faces-config>

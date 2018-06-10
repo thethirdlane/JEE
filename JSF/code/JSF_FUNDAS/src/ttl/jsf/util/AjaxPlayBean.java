@@ -1,9 +1,11 @@
 package ttl.jsf.util;
 
+import javax.enterprise.context.RequestScoped;
 import javax.faces.bean.ManagedBean;
 import javax.inject.Named;
 
 @Named
+@RequestScoped
 public class AjaxPlayBean {
 
     private int x = 1;

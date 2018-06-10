@@ -2,6 +2,7 @@ package ttl.jsf.lifecycle;
 
 import sun.awt.SunHints;
 
+import javax.enterprise.context.RequestScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.event.*;
 import javax.inject.Named;
@@ -11,11 +12,16 @@ import java.util.Collections;
 import java.util.List;
 
 @Named
+@RequestScoped
 public class Tracer {
 
     private String name;
 
     private int age;
+
+    public Tracer() {
+        int i = 0;
+    }
 
     public String getName() {
         System.out.println("Tracer.getName");
