@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_EJB_WS/7_LarkU_EJB_WS.iml" filepath="$PROJECT_DIR$/../EJB3/code/7_LarkU_EJB_WS/7_LarkU_EJB_WS.iml" />
       <module fileurl="file://$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/7_LarkU_JSF_WS.iml" filepath="$PROJECT_DIR$/../EJB3/code/7_LarkU_JSF_WS/7_LarkU_JSF_WS.iml" />
       <module fileurl="file://$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/JSF_FUNDAS.iml" filepath="$PROJECT_DIR$/../JSF/code/JSF_FUNDAS/JSF_FUNDAS.iml" />
+      <module fileurl="file:///tmp/JEE/EJB3/code/LarkU_Clients/LarkU_Clients.iml" filepath="/tmp/JEE/EJB3/code/LarkU_Clients/LarkU_Clients.iml" />
       <module fileurl="file://$PROJECT_DIR$/../EJB3/code/StandAloneJMS/StandAloneJMS.iml" filepath="$PROJECT_DIR$/../EJB3/code/StandAloneJMS/StandAloneJMS.iml" />
     </modules>
   </component>
