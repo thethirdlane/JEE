@@ -55,10 +55,15 @@ public class TreeViewListener implements PhaseListener {
         } else {
             String indent = Stream.generate(() -> "  ").limit(depth).collect(Collectors.joining());
             sb.append(indent).append(root.getClass().getSimpleName()).append(", id: " + root.getClientId());
-            if(root instanceof ValueHolder) {
-                Object value = ((ValueHolder)root).getValue();
+            if (root instanceof ValueHolder) {
+                Object value = ((ValueHolder) root).getValue();
                 sb.append(", value: " + value);
             }
+            /*-
+            else if(root.getClass().getSimpleName().equals("UIInstructions")) {
+                sb.append(", str: [" + root.toString() + "]");
+            }
+            */
             sb.append("\n");
 
             //recurse on each of the children

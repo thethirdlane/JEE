@@ -30,7 +30,7 @@
                         Result: <h:outputText value="outputText: #{comper.name}"/>
                     </td>
                     <td>
-                            Languages: <h:outputText value="#{comper.languages}" />
+                        Languages: <h:outputText value="#{comper.languages}"/>
                     </td>
                 </tr>
                 <tr>
@@ -42,6 +42,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        <h:outputLabel for="langcb" value="Language"/>
+                    </td>
                     <td>
                         <h:selectManyCheckbox id="langcb" value="#{comper.languages}">
                             <f:selectItems value="#{comper.allLanguages}"/>
