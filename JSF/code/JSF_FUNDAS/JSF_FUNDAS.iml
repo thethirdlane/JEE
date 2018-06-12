@@ -19,7 +19,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="WebLogic 12.2.1.3.0" level="application_server_libraries" />
+    <orderEntry type="library" name="WebLogic 12.2.1.3.0" level="application_server_libraries" />
     <orderEntry type="library" name="PrimeFaces-6.1" level="project" />
   </component>
 </module>

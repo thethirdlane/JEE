@@ -11,6 +11,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
+
 @Named
 @RequestScoped
 public class Tracer {
@@ -21,6 +23,7 @@ public class Tracer {
 
     public Tracer() {
         int i = 0;
+        System.out.println("cp: " + System.getProperty("java.class.path"));
     }
 
     public String getName() {
