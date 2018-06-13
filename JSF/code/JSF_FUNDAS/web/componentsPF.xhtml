@@ -36,6 +36,16 @@
                         <p:commandLink value="commandLink: No, Click ME" update="form" action="#{comper.doit()}"/>
                     </p:column>
                 </p:row>
+                <p:row>
+                    <p:column>
+                        <h:outputLabel for="langcb" value="Language"/>
+                    </p:column>
+                    <p:column>
+                        <h:selectManyCheckbox id="langcb" value="#{comper.languages}">
+                            <f:selectItems value="#{comper.allLanguages}"/>
+                        </h:selectManyCheckbox>
+                    </p:column>
+                </p:row>
 
                 <p:row>
                     <p:column>

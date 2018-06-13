@@ -18,37 +18,31 @@
     <f:view>
         <h:messages/>
 
-        <!--
-        <f:ajax listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form" >
-        -->
-        <h:form id="form">
-            <h:panelGrid columns="2">
-                <h:outputText value="x"/>
-                <h:inputText id="x" value="#{ajaxPlayBean.x}">
-                    <!-- <f:ajax event="keyup" listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form" /> -->
-                </h:inputText>
+        <!-- <f:ajax listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form"> -->
+            <h:form id="form">
+                <h:panelGrid columns="2">
+                    <h:outputText value="x"/>
+                    <h:inputText id="x" value="#{ajaxPlayBean.x}">
+                        <!-- <f:ajax event="keyup" listener="#{ajaxPlayBean.calculate}" execute="@this" render="sum" /> -->
+                    </h:inputText>
 
-                <h:outputText value="y"/>
-                <h:inputText id="y" value="#{ajaxPlayBean.y}"/>
+                    <h:outputText value="y"/>
+                    <h:inputText id="y" value="#{ajaxPlayBean.y}"/>
 
-                <h:outputText value="z"/>
-                <h:inputText id="z" value="#{ajaxPlayBean.z}"/>
+                    <h:outputText value="z"/>
+                    <h:inputText id="z" value="#{ajaxPlayBean.z}"/>
 
-                <h:outputText value="sum"/>
-                <h:inputText id="sum" value="#{ajaxPlayBean.sum}"/>
+                    <h:outputText value="sum"/>
+                    <h:inputText id="sum" value="#{ajaxPlayBean.sum}"/>
 
-                <h:commandButton
-                        id="calculate"
-                        value="Calculate" >
-                    <!--
-                        <f:ajax listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form" />
-                     -->
-                </h:commandButton>
-            </h:panelGrid>
-        </h:form>
-        <!--
-        </f:ajax>
-        -->
+                    <h:commandButton
+                            id="calculate"
+                            value="Calculate">
+                            <f:ajax listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form" />
+                    </h:commandButton>
+                </h:panelGrid>
+            </h:form>
+        <!-- </f:ajax> -->
     </f:view>
 
 </h:body>

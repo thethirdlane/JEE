@@ -6,10 +6,18 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>JSF LifeCycle Explorer</title>
+    <link rel="stylesheet" href="css/larkU.css" type="text/css"/>
+</h:head>
+
+
 <h:body>
     <f:view>
+        <h:messages/>
         <h:form id="form">
-            <h:inputText id="name" value="#{tracer.name}"/>
+            <h:inputText id="name" value="#{tracer.name}" />
             <h:commandButton id="doit" value="Do It" action="#{tracer.doit}" />
         </h:form>
     </f:view>

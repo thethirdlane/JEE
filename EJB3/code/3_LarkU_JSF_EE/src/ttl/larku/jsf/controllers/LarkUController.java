@@ -22,6 +22,8 @@ public class LarkUController {
 	
 	@EJB //(lookup="java:global/3_LarkU_EE/3_LarkU_EJB_EE/RegistrationFacadeImpl")
 	private RegistrationFacade regService;
+
+	private Student foundStudent;
 	
 	public List<Student> getAllStudents() {
 		List<Student> students = regService.getAllStudents();
@@ -52,19 +54,34 @@ public class LarkUController {
 
 	public String getStudentWithId() {
 		Map paramMap = FacesContext.getCurrentInstance()
-                .getExternalContext().getRequestParameterMap();
+				.getExternalContext().getRequestParameterMap();
 		int id = Integer.parseInt((String)paramMap.get("getStudentIdForm:id"));
 
 		//Student student = ELResolver.findObject("student", Student.class);
 		Student student = regService.getStudent(id);
-		
+
 		//Have to replace the old student object with our new one
 		Map<String, Object> req = FacesContext.getCurrentInstance().getExternalContext().getRequestMap();
 		Student oldStudent = (Student)req.get("student");
-		
+
 		req.put("student", student);
-		
+
 		return "showStudent";
+	}
+
+	private int foundId;
+	public void setFoundId(int i) {
+		foundId = i;
+	}
+
+	public int getFoundId() {
+		return foundId;
+	}
+
+	public void setupStudentWitId() {
+		//Student student = ELResolver.findObject("student", Student.class);
+       	int id = foundId;
+		foundStudent = regService.getStudent(id);
 	}
 
 	public String getCourse() {
@@ -79,7 +96,11 @@ public class LarkUController {
 		
 		return "showCourse";
 	}
-	
+
+	public Student getFoundStudent() {
+		return foundStudent;
+	}
+
 	public String addStudent() {
 		Student student = ELResolver.findObject("student", Student.class);
 		student = regService.createStudent(student);
@@ -89,12 +110,9 @@ public class LarkUController {
 		
 		req.put("student", student);
 
-		/*
-		Flash flash = FacesContext.getCurrentInstance().getExternalContext()
-				.getFlash();
-		flash.put("student", student);
-		*/
-		//return "getStudents"; //?faces-redirect=true";
+
+        //foundId = student.getId();
+		//return "showStudent?faces-redirect=true&includeViewParams=true";
 		return "showStudent?faces-redirect=true";
 	}
 

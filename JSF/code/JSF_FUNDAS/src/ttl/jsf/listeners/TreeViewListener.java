@@ -1,5 +1,7 @@
 package ttl.jsf.listeners;
 
+import com.sun.faces.facelets.compiler.UIInstructions;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIViewRoot;
@@ -59,11 +61,11 @@ public class TreeViewListener implements PhaseListener {
                 Object value = ((ValueHolder) root).getValue();
                 sb.append(", value: " + value);
             }
-            /*-
-            else if(root.getClass().getSimpleName().equals("UIInstructions")) {
+
+            //else if(root.getClass().getSimpleName().equals("UIInstructions")) {
+            else if(root instanceof UIInstructions) {
                 sb.append(", str: [" + root.toString() + "]");
             }
-            */
             sb.append("\n");
 
             //recurse on each of the children

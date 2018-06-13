@@ -1,29 +1,47 @@
 package ttl.jsf.lifecycle;
 
-import sun.awt.SunHints;
+import ttl.jsf.comps.Comper;
 
 import javax.enterprise.context.RequestScoped;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
 import javax.faces.event.*;
+import javax.faces.validator.ValidatorException;
+import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import javax.xml.transform.sax.SAXSource;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 
-
 @Named
-@RequestScoped
-public class Tracer {
+@ViewScoped
+public class Tracer implements Serializable {
 
     private String name;
+    private String nameA;
+
+    private String otherProp;
+
+    transient Comper comp = new Comper();
 
     private int age;
 
     public Tracer() {
         int i = 0;
         System.out.println("cp: " + System.getProperty("java.class.path"));
+    }
+
+    public String getNameA() {
+        return nameA;
+    }
+
+    public void setNameA(String nameA) {
+        this.nameA = nameA;
     }
 
     public String getName() {
@@ -49,6 +67,16 @@ public class Tracer {
     public void doit() {
         name = mixItUp(name);
         System.out.println("Action: Tracer.doit, name: " + name);
+
+        //return "lifecycle";
+
+    }
+
+    public String doitA() {
+        nameA = mixItUp(nameA);
+        System.out.println("Ajax Action: Tracer.doit, name: " + name);
+
+        return "lifecycle";
     }
 
     public void listen(ActionEvent event) {
@@ -65,12 +93,24 @@ public class Tracer {
         //name = mixItUp(name);
     }
 
-    public void valueChanged(ValueChangeEvent vce) {
-        Object oldVal = vce.getOldValue();
-        Object newVal = vce.getNewValue();
+
+    public void valueChanged(ValueChangeEvent vce) throws ValidatorException {
+        String oldVal = (String) vce.getOldValue();
+        String newVal = (String) vce.getNewValue();
+
+        if (oldVal != null && oldVal.length() < newVal.length()) {
+            UIComponent comp = (UIComponent) vce.getSource();
+            /*
+            FacesContext.getCurrentInstance().addMessage(comp.getClientId(),
+                    new FacesMessage("No", "No you can't!!"));
+            FacesContext.getCurrentInstance().renderResponse();
+            */
+            throw new ValidatorException(new FacesMessage
+                    (FacesMessage.SEVERITY_ERROR,
+                            "No!", "Not allowed!"));
+        }
 
         System.out.println("ValueChangeListener: Tracer.valueChanged, oldVal: " + oldVal + ", newVal: " + newVal);
-
     }
 
     public void ajaxValueChanged(AjaxBehaviorEvent abe) {
@@ -91,9 +131,11 @@ public class Tracer {
     public void preRenderView(ComponentSystemEvent event) {
         System.out.println("preRenderView: ,source: " + event.getSource());
     }
+
     public void preValidate(ComponentSystemEvent event) {
         System.out.println("preValidate: ,source: " + event.getSource());
     }
+
     public void postValidate(ComponentSystemEvent event) {
         System.out.println("postValidate: ,source: " + event.getSource());
     }

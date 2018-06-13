@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application xmlns="http://java.sun.com/xml/ns/javaee"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_8.xsd"
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_8.xsd"
              version="8">
 
-    <module id="__LarkU_EJB_EE-EJB">
-        <ejb>3.jar</ejb>
-    </module>
     <module id="__LarkU_JSF_EE-Web">
         <web>
-            <context-root>3_LarkU_JSF_EEWeb</context-root>
-            <web-uri>3.war</web-uri>
+            <context-root>3_LarkU_EE</context-root>
+            <web-uri>3_LarkU_JSF_EE_war.war</web-uri>
         </web>
+    </module>
+    <module id="__LarkU_JSF_EE-Ejb">
+        <ejb>3_LarkU_EJB.jar</ejb>
     </module>
 </application>

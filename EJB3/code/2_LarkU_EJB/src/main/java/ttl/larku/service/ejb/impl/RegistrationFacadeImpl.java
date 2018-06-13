@@ -26,7 +26,7 @@ public class RegistrationFacadeImpl implements RegistrationFacade{
 	@EJB(beanName="SLStudentServiceImpl")
 	private StudentService studentService;
 
-	
+
 	public RegistrationFacadeImpl() {
 	}
 	

@@ -4,6 +4,17 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
     http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
 
+    <managed-bean>
+        <managed-bean-name>tracer1</managed-bean-name>
+        <managed-bean-class>ttl.jsf.lifecycle.Tracer</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>tracer2</managed-bean-name>
+        <managed-bean-class>ttl.jsf.lifecycle.Tracer</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+
     <navigation-rule>
         <from-view-id>/nav/fromNavigator.xhtml</from-view-id>
         <navigation-case>
@@ -20,6 +31,7 @@
         <from-view-id>/nav/normalResult.xhtml</from-view-id>
         <navigation-case>
             <from-outcome>back</from-outcome>
+            <if>#{tracer.name != null}</if>
             <to-view-id>/nav/fromNavigator.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
@@ -32,8 +44,22 @@
         </navigation-case>
     </navigation-rule>
 
+    <!--
     <lifecycle>
         <phase-listener>ttl.jsf.listeners.TreeViewListener</phase-listener>
-        <!-- <phase-listener>ttl.jsf.listeners.GlobalListener</phase-listener> -->
+        <phase-listener>ttl.jsf.listeners.GlobalListener</phase-listener>
     </lifecycle>
+    -->
+
+    <application>
+        <locale-config>
+            <default-locale>en_EN</default-locale>
+            <supported-locale>es_ES</supported-locale>
+        </locale-config>
+        <message-bundle>ourmessages</message-bundle>
+        <resource-bundle>
+            <base-name>ourmessages</base-name>
+            <var>msg</var>
+        </resource-bundle>
+    </application>
 </faces-config>

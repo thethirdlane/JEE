@@ -19,11 +19,13 @@
     <f:view>
         <h:messages/>
 
-        <p:ajax listener="#{ajaxPlayBean.calculate}" process="form" update="form">
+        <!-- <p:ajax listener="#{ajaxPlayBean.calculate}" process="@form" update="@form">-->
+        <!-- outside wrapping won't work with p:ajax -->
             <h:form id="form">
                 <p:panelGrid columns="2">
                     <h:outputText value="x"/>
                     <h:inputText id="x" value="#{ajaxPlayBean.x}">
+                         <p:ajax process="@form" update="@form" event="keyup" listener="#{ajaxPlayBean.calculate}"/>
                     </h:inputText>
 
                     <h:outputText value="y"/>
@@ -35,16 +37,17 @@
                     <h:outputText value="sum"/>
                     <h:inputText id="sum" value="#{ajaxPlayBean.sum}"/>
 
+
+                    <!-- This button is ajaxified by default, turn off with ajax="false" -->
+
                     <p:commandButton
                             id="calculate"
-                            value="Calculate">
-                        <!--
-                            <f:ajax listener="#{ajaxPlayBean.calculate}" execute="@form" render="@form" />
-                         -->
+                            value="Calculate" action="#{ajaxPlayBean.calculate}" process="@form" update="@form">
+                            <!-- <p:ajax listener="#{ajaxPlayBean.calculate}" process="@form" update="@form" /> -->
                     </p:commandButton>
                 </p:panelGrid>
             </h:form>
-        </p:ajax>
+        <!-- </p:ajax> -->
     </f:view>
 
 </h:body>

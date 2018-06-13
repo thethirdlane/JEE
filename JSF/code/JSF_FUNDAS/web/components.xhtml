@@ -53,6 +53,16 @@
                 </tr>
                 <tr>
                     <td>
+                        <h:outputLabel for="langl" value="Language"/>
+                    </td>
+                    <td>
+                        <h:selectManyListbox id="langl" value="#{comper.languages}">
+                            <f:selectItems value="#{comper.allLanguages}"/>
+                        </h:selectManyListbox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <h:commandButton id="doit" value="commandButton: Do It" actionListener="#{comper.listen}"
                                          action="#{comper.doit}"/>
                     </td>
