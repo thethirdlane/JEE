@@ -1,24 +1,20 @@
 package ttl.larku.service.ejb.impl;
 
-import java.util.ArrayList;
-import java.util.List;
+import ttl.larku.domain.Course;
+import ttl.larku.domain.ScheduledClass;
+import ttl.larku.domain.Student;
+import ttl.larku.service.ejb.*;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Local;
 import javax.ejb.Remote;
-import javax.ejb.Singleton;
+import javax.ejb.Stateless;
+import java.util.ArrayList;
+import java.util.List;
 
-import ttl.larku.domain.Course;
-import ttl.larku.domain.ScheduledClass;
-import ttl.larku.domain.Student;
-import ttl.larku.service.ejb.ClassService;
-import ttl.larku.service.ejb.CourseService;
-import ttl.larku.service.ejb.RegistrationFacade;
-import ttl.larku.service.ejb.RegistrationFacadeLocal;
-import ttl.larku.service.ejb.StudentService;
-
-@Singleton
+@Stateless
+//@RequestScoped
 @Remote(RegistrationFacade.class)
 @Local(RegistrationFacadeLocal.class)
 public class RegistrationFacadeImpl implements RegistrationFacade, RegistrationFacadeLocal{
@@ -28,18 +24,14 @@ public class RegistrationFacadeImpl implements RegistrationFacade, RegistrationF
 	@EJB
 	private ClassService classService;
 
-	@EJB(beanName="LocalStudentServiceImpl")
+	@EJB (beanName="LocalStudentServiceImpl")
 	private StudentService studentService;
 
 	
 	public RegistrationFacadeImpl() {
 	}
 	
-	//@Inject
 	public RegistrationFacadeImpl(CourseService cs, ClassService classService) {
-		courseService = cs;
-		//studentService = ss;
-		this.classService = classService;
 	}
 	
 	@PostConstruct

@@ -24,8 +24,9 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="LarkUPU_EE" />
-          <factory-entry name="LarkUPU_SE" />
+          <factory-entry name="Entities" value="2004f417-6ec2-43d0-b8ea-148582a036f2" />
+          <factory-entry name="LarkUPU_EE" value="2004f417-6ec2-43d0-b8ea-148582a036f2" />
+          <factory-entry name="LarkUPU_SE" value="2004f417-6ec2-43d0-b8ea-148582a036f2" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/java/META-INF/persistence.xml" />
       </configuration>
@@ -52,7 +53,7 @@
     </orderEntry>
     <orderEntry type="library" name="derbyclient" level="project" />
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-    <orderEntry type="library" name="WebLogic 12.2.1.3.0" level="application_server_libraries" />
+    <orderEntry type="library" scope="PROVIDED" name="WebLogic 12.2.1.3.0" level="application_server_libraries" />
     <orderEntry type="library" name="eclipselink2.7" level="project" />
   </component>
 </module>

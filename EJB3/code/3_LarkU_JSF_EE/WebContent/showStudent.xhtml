@@ -1,5 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 
@@ -16,6 +17,11 @@
 			<h2>Student Details</h2>
 
 			<f:view id="showStudentView">
+				<f:metadata>
+					<f:viewParam name="sid" value="#{larkUController.foundId}" />
+					<f:event type="preRenderView" listener="#{larkUController.setupStudentWitId}" />
+				</f:metadata>
+				<c:set var="student" value="#{larkUController.foundStudent}"/>
 				<table border="1">
 					<tr>
 						<td><h:outputLabel value="Name" /></td>

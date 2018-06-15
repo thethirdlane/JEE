@@ -5,10 +5,12 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 
 import ttl.larku.cdi.qualifier.DBQualifier;
 import ttl.larku.cdi.qualifier.DBType;
 import ttl.larku.dao.BaseDAO;
+import ttl.larku.domain.ScheduledClass;
 import ttl.larku.domain.Student;
 
 @DBQualifier(DBType.JPA_STUDENT)
@@ -37,12 +39,19 @@ public class JPAStudentDAO implements BaseDAO<Student> {
 
 	@Override
 	public Student get(int id) {
-		return entityManager.find(Student.class, id);
+        TypedQuery<Student> query = entityManager.
+                createQuery("Select s from Student s left join fetch s.classes c where s.id = :sid",
+                        Student.class);
+        query.setParameter("sid", id);
+        Student s = query.getSingleResult();
+        List<ScheduledClass> l = s.getClasses();
+        return s;
 	}
 
 	@Override
 	public List<Student> getAll() {
-		Query query = entityManager.createQuery("Select s from Student s");
+		TypedQuery<Student> query = entityManager.createQuery("Select s from Student s left join fetch s.classes",
+                Student.class);
 		List<Student> students = query.getResultList();
 		return students;
 	}

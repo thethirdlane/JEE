@@ -1,14 +1,10 @@
 package ttl.larku.db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import ttl.larku.domain.Student;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import ttl.larku.domain.Student;
 
 public class JDBCDemo {
 
@@ -21,8 +17,10 @@ public class JDBCDemo {
 			connection = DriverManager.getConnection(
 					"jdbc:derby://localhost:1527/LarkUDB", "larku", "larku");
 
-			statement = connection
-					.createStatement();
+			statement = connection.createStatement();
+
+			PreparedStatement statement2 = connection.prepareStatement("select * from student where id = ?");
+			statement2.setInt(1, 2);
 
 			ResultSet rs = statement.executeQuery("Select * from Student");
 
@@ -37,20 +35,14 @@ public class JDBCDemo {
 				students.add(student);
 			}
 
+
 			System.out.println(students);
-		} catch (SQLException ex) {
-			ex.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
+		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		finally {
 			try {
 				statement.close();
-			} catch (Throwable e) {
-				e.printStackTrace();
-			}
-			try {
 				connection.close();
 			} catch (Throwable e) {
 				e.printStackTrace();

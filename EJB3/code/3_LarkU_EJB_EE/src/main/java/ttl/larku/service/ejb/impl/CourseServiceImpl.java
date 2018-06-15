@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
 import ttl.larku.cdi.qualifier.DBQualifier;
@@ -14,6 +15,7 @@ import ttl.larku.domain.Course;
 import ttl.larku.service.ejb.CourseService;
 
 //@ApplicationScoped
+//@RequestScoped
 @Stateless
 @Remote
 public class CourseServiceImpl implements CourseService {

@@ -14,7 +14,7 @@ import ttl.larku.domain.Student;
 
 @ManagedBean
 @ApplicationScoped
-public class StudentService {
+public class StudentService implements ttl.larku.service.ejb.StudentService{
 
 	@Inject @DBQualifier(DBType.STUDENT)
 	private BaseDAO<Student> studentDAO;

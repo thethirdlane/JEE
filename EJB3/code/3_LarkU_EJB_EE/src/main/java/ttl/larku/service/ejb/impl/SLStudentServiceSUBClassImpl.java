@@ -15,6 +15,7 @@ import ttl.larku.domain.Student;
 
 @Stateless
 @Local
+@Specializes
 public class SLStudentServiceSUBClassImpl extends SLStudentServiceImpl 
 {
 	@Override

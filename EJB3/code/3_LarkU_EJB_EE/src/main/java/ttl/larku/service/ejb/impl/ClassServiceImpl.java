@@ -1,13 +1,5 @@
 package ttl.larku.service.ejb.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.ejb.EJB;
-import javax.ejb.Local;
-import javax.ejb.Stateless;
-import javax.inject.Inject;
-
 import ttl.larku.cdi.qualifier.DBQualifier;
 import ttl.larku.cdi.qualifier.DBType;
 import ttl.larku.dao.BaseDAO;
@@ -15,6 +7,13 @@ import ttl.larku.domain.Course;
 import ttl.larku.domain.ScheduledClass;
 import ttl.larku.service.ejb.ClassService;
 import ttl.larku.service.ejb.CourseService;
+
+import javax.ejb.EJB;
+import javax.ejb.Local;
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
 
 @Stateless
 @Local

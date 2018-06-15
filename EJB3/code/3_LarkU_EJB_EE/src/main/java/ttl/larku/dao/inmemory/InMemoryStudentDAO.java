@@ -1,24 +1,26 @@
 package ttl.larku.dao.inmemory;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
-
 import ttl.larku.cdi.qualifier.DBQualifier;
 import ttl.larku.cdi.qualifier.DBType;
 import ttl.larku.dao.BaseDAO;
 import ttl.larku.domain.Student;
 
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 @DBQualifier(DBType.STUDENT)
 @ApplicationScoped
 public class InMemoryStudentDAO implements BaseDAO<Student>, Serializable {
 
-	private Map<Integer, Student> students = new HashMap<Integer, Student>();
+	//private Map<Integer, Student> students = new HashMap<Integer, Student>();
+	private Map<Integer, Student> students = new ConcurrentHashMap<>();
 	private static int nextId = 1;
 	
 	@PostConstruct

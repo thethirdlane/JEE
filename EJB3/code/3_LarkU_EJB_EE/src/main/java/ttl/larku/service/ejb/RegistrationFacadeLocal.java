@@ -1,6 +1,6 @@
 package ttl.larku.service.ejb;
 
-public interface RegistrationFacadeLocal {
+public interface RegistrationFacadeLocal extends RegistrationFacade{
 
 	public CourseService getCourseService();
 	public StudentService getStudentService();

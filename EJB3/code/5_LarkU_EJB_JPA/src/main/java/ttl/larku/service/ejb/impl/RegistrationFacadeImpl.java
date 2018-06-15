@@ -108,8 +108,8 @@ public class RegistrationFacadeImpl implements RegistrationFacade, RegistrationF
 				sc.addStudent(student);
 				student.addClass(sc);
 				found = sc;
-				classService.updateScheduledClass(sc);
-				studentService.updateStudent(student);
+				//classService.updateScheduledClass(sc);
+				//studentService.updateStudent(student);
 				break;
 			}
 		}
@@ -233,8 +233,11 @@ public class RegistrationFacadeImpl implements RegistrationFacade, RegistrationF
 
 	@Override
 	@Logged
-	public List<Student> getAllStudents() {
-		return studentService.getAllStudents();
+	public List<Student> getAllStudents()
+    {
+		List<Student> list =  studentService.getAllStudents();
+
+		return list;
 	}
 
 	@Override

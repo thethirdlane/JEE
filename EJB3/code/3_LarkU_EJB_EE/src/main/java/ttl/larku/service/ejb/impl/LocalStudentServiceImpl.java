@@ -4,15 +4,19 @@ import java.util.List;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.inject.Qualifier;
 
 import ttl.cdi.interceptors.Logged;
 import ttl.larku.cdi.qualifier.DBQualifier;
 import ttl.larku.cdi.qualifier.DBType;
+import ttl.larku.cdi.qualifier.SSQualifier;
 import ttl.larku.dao.BaseDAO;
 import ttl.larku.domain.Student;
 import ttl.larku.service.ejb.StudentService;
 
+//@RequestScoped
 @Stateless
 @Local
 public class LocalStudentServiceImpl implements StudentService {

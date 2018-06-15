@@ -1,21 +1,20 @@
 package ttl.larku.domain;
 
-import java.io.Serializable;
-import java.util.Arrays;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.List;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @Entity
+@NamedQueries({
+		@NamedQuery(name = "getAll",
+				query = "SELECT c FROM Course c")})
 public class Course implements Serializable{
 	
 	@Id
@@ -29,7 +28,7 @@ public class Course implements Serializable{
 	//@JsonIgnore
 	@XmlTransient
 	private float [] creditList = { 1, 1.5f, 2, 2.5f, 3, 3.5f, 4};
-	
+
 	public Course() {}
 	
 	public Course(String code, String title) {

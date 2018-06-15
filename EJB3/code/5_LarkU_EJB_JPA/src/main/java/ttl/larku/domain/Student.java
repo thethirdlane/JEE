@@ -4,14 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -41,7 +34,7 @@ public class Student implements Serializable {
 	
 	
 	//@JsonManagedReference
-	@ManyToMany(mappedBy="students", fetch=FetchType.EAGER)
+	@ManyToMany(mappedBy="students")
 	@XmlElementWrapper(name="classes")
 	@XmlElement(name="class")
 	private List<ScheduledClass> classes;

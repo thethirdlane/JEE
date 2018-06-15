@@ -9,19 +9,24 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.model.SelectItem;
+import javax.inject.Inject;
 
+import ttl.larku.cdi.qualifier.SSQualifier;
 import ttl.larku.domain.Course;
 import ttl.larku.domain.ScheduledClass;
 import ttl.larku.domain.Student;
 import ttl.larku.jsf.data.ClassDataHolder;
 import ttl.larku.jsf.util.ELResolver;
 import ttl.larku.service.ejb.RegistrationFacade;
+import ttl.larku.service.ejb.RegistrationFacadeLocal;
 
 @ManagedBean
+@RequestScoped
 public class LarkUController {
 	
-	@EJB //(lookup="java:global/3_LarkU_EE/3_LarkU_EJB_EE/RegistrationFacadeImpl")
-	private RegistrationFacade regService;
+	//private RegistrationFacade regService;
+	@EJB
+	private RegistrationFacadeLocal regService;
 
 	private Student foundStudent;
 	
@@ -104,16 +109,10 @@ public class LarkUController {
 	public String addStudent() {
 		Student student = ELResolver.findObject("student", Student.class);
 		student = regService.createStudent(student);
-		
-		Map<String, Object> req = FacesContext.getCurrentInstance().getExternalContext().getRequestMap();
-		Student oldCourse = (Student)req.get("student");
-		
-		req.put("student", student);
 
-
-        //foundId = student.getId();
-		//return "showStudent?faces-redirect=true&includeViewParams=true";
-		return "showStudent?faces-redirect=true";
+        foundId = student.getId();
+		return "showStudent?faces-redirect=true&includeViewParams=true";
+		//return "showStudent?faces-redirect=true";
 	}
 
 	public String addCourse() {
